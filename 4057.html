@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            background-image: url('https://ghanaraveawards.com/wp-content/uploads/2023/05/Ent.jpg');
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        main article h2 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        main article .meta {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        main article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main article p {
+            margin-bottom: 15px;
+        }
+
+        main article .read-more {
+            display: inline-block;
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background-color: #555;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        aside section h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        aside section ul {
+            list-style: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        aside section ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3I9GKPB2j1C24kN3exAJAJrBs0NZZN_X5zQ&s" alt="Logo">
+	<h1>Entertainment Has No end!!!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Entertainment News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article id="default">
+                <h2>Latest Entertainment Buzz</h2>
+                <p class="meta">By Sumanth | August 18, 2024</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCCN2P2hmQaAUZCqKbpoiElitmTVGxMhdXgg&s" alt="Entertainment Image" width="700">
+                <p>"Dive into the latest trends in entertainment with our in-depth analysis and exciting updates. From blockbuster movies to viral shows, we cover it all. Explore the world of entertainment like never before and stay ahead of the curve with the latest news and reviews from the industry."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post1">
+                <h2>New Movie Releases</h2>
+                <p class="meta">By sumanth | August 16, 2024</p>
+                <img src="https://i.ytimg.com/vi/gbq1dBPpY2w/maxresdefault.jpg" alt="Post 1 Image" width="700">
+                <p>"Catch the latest movie releases that are taking the entertainment world by storm. From action-packed thrillers to heartwarming dramas, our reviews will help you decide which films are worth watching. Discover the new hits and hidden gems of the cinematic universe."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post2">
+                <h2>Celebrity Interviews</h2>
+                <p class="meta">By Sumanth | August 17, 2024</p>
+                <img src="https://www.bollywoodshaadis.com/img/article-2023719315425456574000.jpg" alt="Post 2 Image" width="700">
+                <p>"Get exclusive insights into the lives of your favorite celebrities with our in-depth interviews. Learn about their latest projects, personal stories, and what’s next on their agenda. Our interviews provide a unique glimpse into the world of entertainment’s biggest stars."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post3">
+                <h2>Top TV Shows</h2>
+                <p class="meta">By Sumanth | August 18, 2024</p>
+                <img src="https://i.ytimg.com/vi/vhw8vS7aCcA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVm5eFZFJiADFFmAV0rStRzduSug" alt="Post 3 Image" width="700">
+                <p>"Explore the top TV shows that are making waves this season. From gripping dramas to hilarious comedies, our guide helps you find the must-watch series of the moment. Stay tuned for reviews and recommendations on the best shows to binge-watch."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Trending Topics</h3>
+                <ul>
+                    <li><a href="#post1">Movie Releases</a></li>
+                    <li><a href="#post2">Celebrity Interviews</a></li>
+                    <li><a href="#post3">Top TV Shows</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Celebrity News</a></li>
+                    <li><a href="#">Music</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Contact us at:sumanthrayankula72@gmail.com </p>
+        <p>Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 Entertainment Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
